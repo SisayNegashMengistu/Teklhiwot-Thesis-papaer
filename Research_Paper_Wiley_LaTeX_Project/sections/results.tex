@@ -406,9 +406,9 @@ async function uploadAndAnchor(
     );
 
     // 3. Compute plaintext hash
-    const hash = crypto.createHash('sha256')(
-        JSON.stringify(payload)
-    ).digest('hex');
+    const hash = crypto.createHash('sha256')
+        .update(JSON.stringify(payload))
+        .digest('hex');
 
     // 4. Anchor on-chain
     await contract.methods.anchorReport(

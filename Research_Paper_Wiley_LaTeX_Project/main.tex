@@ -1,10 +1,29 @@
-\documentclass[AMA,LATO1COL]{WileyNJD-v2}
+\documentclass[11pt]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+
+\newcommand{\articletype}[1]{}
+\newcommand{\received}[1]{}
+\newcommand{\revised}[1]{}
+\newcommand{\accepted}[1]{}
+\newcommand{\raggedbottom}{}
+\newcommand{\authormark}[1]{}
+\newcommand{\orgdiv}[1]{#1}
+\newcommand{\orgname}[1]{#1}
+\newcommand{\orgaddress}[1]{#1}
+\newcommand{\city}[1]{#1}
+\newcommand{\country}[1]{#1}
+\newcommand{\email}[1]{#1}
+\newcommand{\presentaddress}[1]{}
+\newcommand{\cmark}[1]{#1}
+\newcommand{\jnlcitation}[1]{}
 
 \articletype{Research Article}
 \received{XX Month XXXX}
@@ -30,6 +49,6 @@
 \input{sections/discussion}
 \input{sections/conclusion}
 
-\bibliographystyle{wileyNJD-AMA}
+\bibliographystyle{plain}
 \bibliography{references}
 \end{document}
