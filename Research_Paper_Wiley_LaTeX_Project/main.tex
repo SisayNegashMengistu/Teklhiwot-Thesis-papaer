@@ -1,36 +1,9 @@
-\documentclass[11pt]{article}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{hyperref}
-\usepackage{url}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{tabularx}
-
-\newcommand{\articletype}[1]{}
-\newcommand{\received}[1]{}
-\newcommand{\revised}[1]{}
-\newcommand{\accepted}[1]{}
-\newcommand{\raggedbottom}{}
-\newcommand{\authormark}[1]{}
-\newcommand{\orgdiv}[1]{#1}
-\newcommand{\orgname}[1]{#1}
-\newcommand{\orgaddress}[1]{#1}
-\newcommand{\city}[1]{#1}
-\newcommand{\country}[1]{#1}
-\newcommand{\email}[1]{#1}
-\newcommand{\presentaddress}[1]{}
-\newcommand{\cmark}[1]{#1}
-\newcommand{\jnlcitation}[1]{}
+\documentclass[AMA,LATO1COL]{WileyNJDv5}
 
 \articletype{Research Article}
 \received{XX Month XXXX}
 \revised{XX Month XXXX}
 \accepted{XX Month XXXX}
-\raggedbottom
-
 \begin{document}
 \title{Selective Anchoring: A Privacy-Layered Blockchain Architecture for Disease Surveillance in Resource-Constrained Environments}
 \author[1]{Teklhiwot Mekonen\textsuperscript{*}}
@@ -42,6 +15,8 @@
 
 \input{sections/abstract}
 \maketitle
+\clearpage
+\twocolumn
 \input{sections/introduction}
 \input{sections/related_work}
 \input{sections/methodology}
@@ -49,6 +24,6 @@
 \input{sections/discussion}
 \input{sections/conclusion}
 
-\bibliographystyle{plain}
+\bibliographystyle{wileyNJD-AMA}
 \bibliography{references}
 \end{document}
